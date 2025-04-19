@@ -1,149 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Nicolas NGWAMASHI</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body class="bg-gray-100 text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas NGWAMASHI | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4" id="home">
+      <img src="profil.jpeg" alt="Photo de profil" class="w-32 h-32 rounded-full mb-4 border-4 border-indigo-500 shadow-lg animate-bounce" />
+      <h1 class="text-4xl font-bold mb-2">Nicolas NGWAMASHI</h1>
+      <h2 class="text-xl text-indigo-300 mb-6">
+        <span id="typed"></span>
+      </h2>
+      <div class="flex gap-4">
+        <a href="#projects" class="bg-indigo-500 hover:bg-indigo-600 px-6 py-2 rounded-full text-white font-medium transition duration-300">Voir mes projets</a>
+        <a href="cv_nicolas_ngwamashi.pdf" download class="bg-gray-700 hover:bg-gray-600 px-6 py-2 rounded-full text-white font-medium transition duration-300">Télécharger mon CV</a>
+      </div>
+    </section>
 
-    <!-- Header Section -->
-    <header class="bg-blue-900 text-white text-center py-10 shadow-md">
-        <img src="profil.jpeg" alt="Profile Picture" class="rounded-full w-32 mx-auto mb-4">
-        <h1 class="text-4xl font-bold">Nicolas NGWAMASHI</h1>
-        <p class="text-xl mt-2">Ingénieur Informatique | Développeur Android | Technicien IT</p>
-        <p class="mt-1">Kolwezi, Quartier Joli City | ngwamashi495@gmail.com | +243 979 593 384</p>
-    </header>
+    <!-- A propos -->
+    <section class="py-16 px-6 bg-gray-800" id="about">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Qui suis-je ?</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Ingénieur en informatique appliquée à la gestion des entreprises, certifié en développement Android. Autonome, rigoureux, avec un 6ème sens .
+        </p>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto p-6">
+    <!-- Compétences -->
+    <section class="py-16 px-6" id="skills">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Compétences</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">Java</div>
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">Android Studio</div>
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">Windows 10/11/12</div>
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">Active Directory</div>
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">Microsoft 365</div>
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">NetBeans</div>
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">Photoshop</div>
+          <div class="bg-gray-800 p-4 rounded-xl hover:bg-indigo-500 transition">Google Workspace</div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Profil Section -->
-        <section class="my-8" id="profil">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Profil Professionnel</h2>
-            <p>Ingénieur en informatique appliquée à la gestion des entreprises, certifié en développement Android. Autonome, rigoureux, disponible immédiatement et habitué aux environnements industriels. Expériences en freelance, support technique, et développement Android.</p>
-        </section>
+    <!-- Projets -->
+    <section id="projects" class="py-16 px-6 bg-gray-800">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Projets</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
+            <h3 class="text-xl font-semibold mb-2">projets académiques pour les étudiants en terminal filière informatique et autres</h3>
+            <p class="text-gray-400">Conception et développement de plusieurs applications académiques pendant le cursus universitaire, en Java.</p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
+            <h3 class="text-xl font-semibold mb-2">Projet de pointage électronique</h3>
+            <p class="text-gray-400">Système en cours de développement pour le pointage électronique par badge d'une université.</p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
+            <h3 class="text-xl font-semibold mb-2">Création et Conception cartes d'étudiants, et plusieurs affiches</h3>
+            <p class="text-gray-400">Conception et impressions des cartes d'étudiants pour l'Institut Supérieur de Kolwezi, et conception des plusieurs affiches.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Compétences Section -->
-        <section class="my-8" id="competences">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Compétences Techniques</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <ul class="list-disc list-inside">
-                    <li>Systèmes : Windows 10 / 11 / 12</li>
-                    <li>Administration : Active Directory, BitLocker</li>
-                    <li>Cloud : Microsoft 365, Google Workspace</li>
-                    <li>Déploiement : Ghost, ImageX</li>
-                </ul>
-                <ul class="list-disc list-inside">
-                    <li>Maintenance : PC, postes Lenovo</li>
-                    <li>Sécurité : Gestion des accès</li>
-                    <li>Langages : Java (Android), C (base)</li>
-                </ul>
-            </div>
-        </section>
+    <!-- Contact -->
+    <section class="py-16 px-6" id="contact">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Contact</h2>
+        <p class="mb-4">📍 Kolwezi, Quartier Joli City</p>
+        <p class="mb-4">
+          📧 <a href="mailto:ngwamashi495@gmail.com" class="text-indigo-400 hover:underline">ngwamashi495@gmail.com</a>
+        </p>
+        <p class="mb-4">
+          📞 <a href="tel:+243979593384" class="text-indigo-400 hover:underline">+243 979 593 384</a>
+        </p>
+      </div>
+    </section>
 
-        <!-- Expériences Section -->
-        <section class="my-8" id="experience">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Expériences Professionnelles</h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="font-semibold">Freelance – Technicien IT & Développeur Android (2021 - Aujourd’hui)</h3>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Maintenance de parcs informatiques</li>
-                        <li>Déploiement d'applications Android en Java</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold">CEPROMAD – Technicien de Maintenance (Avril - Juin 2021)</h3>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Diagnostic de pannes, configuration de postes</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold">Stagiaire IT – Projet universitaire (2020 - 2021)</h3>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Migration vers Windows 10, scripts de maintenance</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projets Section -->
-        <section class="my-8" id="projets">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Projets</h2>
-            <ul class="list-disc list-inside">
-                <li>Applications académiques (gestion, plateforme e-learning...)</li>
-                <li>Pointage électronique par badge pour une université (en cours)</li>
-            </ul>
-        </section>
-
-        <!-- Formation Section -->
-        <section class="my-8" id="formation">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Formation & Certifications</h2>
-            <ul class="list-disc list-inside">
-                <li>Master (BAC+5) en Informatique Appliquée</li>
-                <li>Certificat Android (Java) – Aptech/ABS</li>
-                <li>Formation en Sécurité Informatique</li>
-            </ul>
-        </section>
-
-        <!-- Langues Section -->
-        <section class="my-8" id="langues">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Langues</h2>
-            <ul class="list-disc list-inside">
-                <li>Français : Courant</li>
-                <li>Anglais : Débutant</li>
-                <li>Lingala : Courant</li>
-                <li>Swahili : Élémentaire</li>
-            </ul>
-        </section>
-
-        <!-- Logiciels Section -->
-        <section class="my-8" id="logiciels">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Logiciels Maîtrisés</h2>
-            <p>Android Studio, NetBeans, Microsoft Office, Cisco, Photoshop</p>
-        </section>
-
-        <!-- Centres d'intérêt Section -->
-        <section class="my-8" id="interets">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Centres d’intérêt</h2>
-            <ul class="list-disc list-inside">
-                <li>Lecture</li>
-                <li>Football</li>
-                <li>Musique</li>
-                <li>Spiritualité</li>
-            </ul>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="my-8" id="contact">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Me Contacter</h2>
-            <form class="grid gap-4">
-                <input type="text" placeholder="Nom" class="p-2 border rounded">
-                <input type="email" placeholder="Email" class="p-2 border rounded">
-                <textarea rows="4" placeholder="Message" class="p-2 border rounded"></textarea>
-                <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded">Envoyer</button>
-            </form>
-        </section>
-
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="text-center py-6 bg-gray-200 mt-10">
-        <p>&copy; 2025 Nicolas NGWAMASHI. Tous droits réservés.</p>
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-800 text-gray-400">
+      © 2025 Nicolas NGWAMASHI - Tous droits réservés
     </footer>
 
-    <!-- ScrollReveal Animation -->
     <script>
-        ScrollReveal().reveal('section', {
-            delay: 200,
-            duration: 1000,
-            distance: '50px',
-            easing: 'ease-in-out',
-            origin: 'bottom'
-        });
+      new Typed('#typed', {
+        strings: [
+          'Développeur Android',
+          'Technicien IT',
+          'Freelance passionné',
+          'Disponible immédiatement'
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
+      });
     </script>
-</body>
+  </body>
 </html>
